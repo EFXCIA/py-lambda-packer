@@ -90,7 +90,7 @@ class VirtualEnv(object):
 
     @property
     def site_package_dirs(self):
-        dirs = os.path.join(self.path, 'lib', '*', 'site-packages')
+        dirs = os.path.join(self.path, 'lib*', '*', 'site-packages')
         return glob.glob(dirs)
 
     @property
